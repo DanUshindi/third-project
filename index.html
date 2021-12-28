@@ -3,12 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:0;
+    background:rgb(33,33,35);
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background: red;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.first {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 0.6em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#second {
+    height: 200px;
+    background: rgb(33,33,35);
+    width: 100%;
+}
+h1 {
+
+    text-align: center;
+    color: white;
+}
+img {
+    width: 300px;
+    height: 220px;
+}
+
+.three {
+    display: flex;
+    flex-direction:column ;
+    background: rgb(69,86,125);
+}
+h2 {
+    text-align: center;
+    color:white;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ .four {
+    background: rgb(69,86,125);
+    width: 100%;
+}
+    </style>
   </head>
 
   <body>
     <header id="welcome-section">
       <nav id="navbar">
+        <div class="first"></div>
         <ul>
           <li>About</li>
           <li>Work</li>
@@ -16,8 +91,11 @@
         </ul>
       </nav>
     </header>
-    <div><h1>Hello, I am a web developer.</h1></div>
-    <main>
+
+    <div id="second">
+      <h1>Hello, I am a web developer.</h1>
+    </div>
+    <main class="three">
       <h2>Some of my projects:</h2>
       <section class="container" id="projects">
         <div class="project-tile">
@@ -36,7 +114,7 @@
           /></a>
         </div>
       </section>
-      <section id="contacts">
+      <div class="four">
         <h2>Let's connect...</h2>
         <ul>
           <a href="https://github.com/virag-ky"
@@ -45,7 +123,7 @@
           <li>Twitter</li>
           <li>Facebook</li>
         </ul>
-      </section>
+      </div>
     </main>
     <footer></footer>
 
